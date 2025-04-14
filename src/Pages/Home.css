@@ -1,0 +1,50 @@
+  .home-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-wrapper {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  
+  .Next-Gen,
+  .Web {
+    position: absolute;
+    left: 8%;
+    margin: 0;
+    animation: fadeSlideIn 1.2s ease-out both;
+  }
+  
+  .Next-Gen {
+    bottom: 50%;
+    color: #FFCC00;
+    font-size: 6rem;
+    animation-delay: 0.4s;
+  }
+  
+  .Web {
+    bottom: 40%;
+    color: white;
+    font-size: 6rem;
+    animation-delay: 0.8s;
+  }
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  

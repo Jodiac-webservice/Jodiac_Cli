@@ -1,0 +1,105 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+  }
+  
+  .card-col {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .right-card {
+    margin-top: 90px; 
+  }
+  
+  .project-card {
+    position: relative;
+    border-radius: 16px;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 
+      transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      filter 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.035) translateY(-6px);
+    box-shadow: 
+      0 10px 28px rgba(255, 255, 255, 0.404),
+      0 0 15px rgba(100, 100, 98, 0.441); 
+    filter: brightness(1.05);
+  }
+  
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.723) 50%,
+      transparent 100%
+    );
+    transform: rotate(0deg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+  }
+  
+  .project-card:hover::before {
+    opacity: 1;
+    animation: shine 1.2s ease-in-out forwards;
+  }
+  
+  @keyframes shine {
+    0% {
+      transform: rotate(0deg) translate(-120%, -120%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: rotate(0deg) translate(120%, 120%);
+      opacity: 0;
+    }
+  }
+  
+  .project-card:hover .project-title {
+    text-shadow: 0 0 10px rgba(247, 194, 0, 0.726);
+    transition: text-shadow 0.3s ease;
+  }
+  
+  .project-meta {
+    color: white;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .project-title {
+    color: #f7c100;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0 20px;
+  }

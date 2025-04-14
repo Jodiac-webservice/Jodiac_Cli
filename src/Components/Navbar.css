@@ -1,0 +1,79 @@
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-family: 'cursive', sans-serif; 
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ccc;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .connect-button {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .connect-button:hover {
+    background-color: #FFEC8B; /* Lighter yellow on hover */
+  }
+  
+  .email-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .email-icon svg {
+    font-size: 1.25rem;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  }
