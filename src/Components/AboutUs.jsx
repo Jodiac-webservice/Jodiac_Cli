@@ -13,7 +13,7 @@ const AboutUs = () => {
         </h1>
         <p className='about-description'>
           At Jodiac, we believe that every great idea deserves the perfect platform to grow.
-          As a team of skilled creatives, tech experts, and strategic minds, we are committed
+          As a team of skilled creatives, tech experts, and strategic minds, We are committed
           to bringing your vision to life.
         </p>
         </div>
