@@ -5,7 +5,7 @@ import './Card.css';
 const Card = () => {
   return (
     <div className="card-container">
-    <div class="cursor-glow"></div>
+    <div className="cursor-glow"></div>
 
       <div className="card-col">
         <div className="project-card">

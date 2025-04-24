@@ -1,0 +1,22 @@
+.review-card {
+    width: 280px;
+    background-color: #282828;
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  .stars {
+    color: #f6c90e;
+    font-size: 1.5rem;
+  }
+  .text-container{
+        height: inherit;
+        width: fit-content;
+  }
+  .text{
+    font-size: 1rem;
+  }

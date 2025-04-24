@@ -1,0 +1,197 @@
+.Ourservice-container{
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+}
+.Ourservice-subtitle{
+    color: #8b8b8b;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 1.5rem;
+}
+.Ourservice-subtitle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #f7c100;
+    border-radius: 50%;
+}
+.Ourservice-title {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+  
+  .title-highlight {
+    color: #f7c100;
+  }
+  
+  .title-secondary {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .Heading{
+    font-size: 6.9rem;
+    font-weight: 790;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    flex-wrap: wrap;
+  }
+  .container::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  
+  
+  .details {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 40%;
+  }
+  
+  .list-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .list {
+    position: relative;
+    padding-left: 3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.6rem;
+  }
+  
+  .list:last-child {
+    border-bottom: none;
+  }
+  
+  .list::before {
+    content: counter(step-counter, decimal-leading-zero);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .list-container {
+    counter-reset: step-counter;
+  }
+  .Ourservice-title-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .gig-button {
+    padding: 1rem 2.6rem;
+    font-size: 1.3rem;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+    box-shadow: 
+      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  
+  .gig-button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 
+      0 3.4px 3px rgba(0, 0, 0, 0.045),
+      0 7.7px 6.5px rgba(0, 0, 0, 0.06),
+      0 14.5px 12.2px rgba(0, 0, 0, 0.075),
+      0 25.3px 21.3px rgba(0, 0, 0, 0.09),
+      0 47.8px 40.4px rgba(0, 0, 0, 0.105),
+      0 100px 80px rgba(0, 0, 0, 0.13);
+  }
+  
+  .gig-button:active {
+    transform: translateY(1px);
+    box-shadow: 
+      0 2px 1.5px rgba(0, 0, 0, 0.04),
+      0 4.7px 3.3px rgba(0, 0, 0, 0.055),
+      0 9px 6.5px rgba(0, 0, 0, 0.065),
+      0 16px 12px rgba(0, 0, 0, 0.075),
+      0 30px 22px rgba(0, 0, 0, 0.085);
+  }
+  .service-container {
+    width: 85%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+  }
+  
+  .service-list {
+    font-size: 72px;
+    font-weight: 900;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .add-btn {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #e0e0e0;
+  }
+  

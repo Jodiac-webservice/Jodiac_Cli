@@ -227,22 +227,16 @@ const GlowingCursor = () => {
           }}
         />
       ))}
-
-      {/* Orbital ring system */}
       <motion.div
         className="cosmic-orbit"
         style={{ x: mouseX, y: mouseY }}
         animate={orbitControls}
       />
-
-      {/* Ripple effects */}
       <motion.div
         className="cosmic-ripple"
         style={{ x: mouseX, y: mouseY }}
         animate={rippleControls}
       />
-
-      {/* Core glowing */}
       <motion.div
         className="cosmic-core"
         style={{

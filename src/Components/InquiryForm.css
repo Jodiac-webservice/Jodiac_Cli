@@ -1,0 +1,110 @@
+.inquiry-container {
+    display: flex;
+    gap: 50px;
+    padding: 80px 60px;
+    background: #1f1f1f;
+    color: #fff;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 5%;
+  }
+  
+  .inquiry-left {
+    flex: 1;
+  }
+  
+  .subheading {
+    color: #f6c32e;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .headline {
+    font-size: 50px;
+    line-height: 1.15;
+    font-weight: 900;
+  }
+  
+  .highlight {
+    color: #f6c32e;
+  }
+  
+  .bodytext {
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+  .note {
+    font-size: 13px;
+    color: #888;
+    margin-top: 30px;
+  }
+  
+  .inquiry-right {
+    flex: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  label span {
+    color: #f6c32e;
+    margin-right: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 14px;
+    border: none;
+    border-bottom: 1px solid #444;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  .budget-range {
+    font-size: 13px;
+    margin-top: -10px;
+    color: #ccc;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 16px;
+    background: #f6c32e;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #ffe084;
+  }
+  
